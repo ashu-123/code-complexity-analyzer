@@ -4,6 +4,7 @@ import com.codecomplexity.analyzer.model.CodeComplexity;
 import com.codecomplexity.analyzer.model.Input;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +15,8 @@ public class CodeComplexityResource {
 
     private final ChatClient chatClient;
 
-    public CodeComplexityResource(ChatClient chatClient) {
-        this.chatClient = chatClient;
+    public CodeComplexityResource(OllamaChatModel ollamaChatModel) {
+        this.chatClient = ChatClient.create(ollamaChatModel);
     }
 
     @PostMapping("/analyzer")
