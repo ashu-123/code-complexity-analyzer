@@ -26,8 +26,8 @@ A web-based tool that analyzes the **time complexity** of a given code snippet u
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/time-complexity-analyzer.git
-    cd time-complexity-analyzer/backend
+    git clone https://github.com/ashu-123/code-complexity-analyzer.git
+    cd code-complexity-analyzer/backend
     ```
 
 2. Start Ollama with the model:
@@ -108,7 +108,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-Developed with the help of OpenAI’s ChatGPT and the Spring AI ecosystem.
+Developed with the help of Ollama and the Spring AI ecosystem.
 
 ## 💡 Future Improvements
 
